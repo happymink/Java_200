@@ -1,6 +1,6 @@
 package part2;
 
-public class JavaPrimaryType {
+public class s016 {
     public static void main(String[] args) {
         boolean isL = false;
         char suit = 'H';

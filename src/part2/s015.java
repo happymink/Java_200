@@ -3,7 +3,7 @@ package part2;
 /*API에서 제공하는 참조타입 사용하기 */
 import java.util.Calendar;
 import java.util.Date;
-public class JavaObjectType {
+public class s015 {
     public static void main(String[] args) {
         //기본타입의 배열은 참조형
         int [] m = {1,2,3}; //배열

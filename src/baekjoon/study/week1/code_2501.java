@@ -3,7 +3,7 @@ package baekjoon.study.week1;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class n2501 {
+public class code_2501 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
