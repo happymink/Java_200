@@ -10,7 +10,7 @@ class ThreadEx16 {
         Thread th1 = new Thread(r1, "*");
         Thread th2 = new Thread(r2, "**");
         Thread th3 = new Thread(r3, "***");
-        // [by LSH] 다음과 같이 하나의 객체를 생성한 후,
+        //  다음과 같이 하나의 객체를 생성한 후,
         //			그 객체를 매개변수로 새로운 객체를 여러 개 생성하면,
         // 			매개변수 객체의 인스턴스 변수가 달라짐에 따라, 새로운 객체들이 모두 영향을 받는다.
         // RunImplEx16 testR = new RunImplEx16();
@@ -24,7 +24,7 @@ class ThreadEx16 {
         th3.start();
 
         try {
-            Thread.sleep(2000);	// [by LSH] main 이 흐르는 시간 관장
+            Thread.sleep(2000);	//  main 이 흐르는 시간 관장
             r1.suspend();
             Thread.sleep(2000);
             r2.suspend();
@@ -40,19 +40,19 @@ class ThreadEx16 {
 }
 
 class RunImplEx16 implements Runnable {
-    boolean suspended = false;
-    boolean stopped = false;
+//     boolean suspended = false;
+//     boolean stopped = false;
+//
 
-
-    volatile long sharedVal; //long 타입 변수를 원자화
-    volatile double sharedVal2; //double 타입 변수를 원자화
+    volatile boolean suspended = false;
+    volatile boolean stopped = false;
 
     public void run() {
         while(!stopped) {
             if(!suspended) {
                 System.out.println(Thread.currentThread().getName());
                 try {
-                    Thread.sleep(1000);	// [by LSH] 출력하는 단위 시간 관장
+                    Thread.sleep(1000);	// 출력하는 단위 시간 관장
                 } catch(InterruptedException e) {}
             }
 //			System.out.print("");
