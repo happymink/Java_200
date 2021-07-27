@@ -9,7 +9,8 @@ public class code_11720 {
         String s = sc.next();
         int sum = 0;
         for (int i = 0; i<N; i++){
-            sum += Integer.parseInt(s[i]);
+     //      sum += Integer.parseInt(s[i]);
         }
+        // ...........ㅜ
     }
 }
