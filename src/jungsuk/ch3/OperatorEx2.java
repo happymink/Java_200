@@ -14,6 +14,7 @@ public class OperatorEx2 {
 
         j = ++i;
         System.out.println(j);
-
+        System.out.println(j--);
+        System.out.println(i);
     }
 }
