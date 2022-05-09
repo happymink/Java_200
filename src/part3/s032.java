@@ -9,7 +9,6 @@ public class s032 {
         double longtitudel2 = 129.321124;
 
         System.out.println(latitudel + "\t"+ longtitudel);
-
         //실수 1차원ㅂ ㅐ열
 
         double [] latlng1 = {latitudel, longtitudel};
